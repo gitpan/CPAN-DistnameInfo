@@ -1,5 +1,5 @@
 name: CPAN-DistnameInfo
-version: 0.05
+version: 0.06
 abstract: Extract distribution name and version from a distribution filename
 author: Graham Barr <gbarr@pobox.com>
 license: perl
