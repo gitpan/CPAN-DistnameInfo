@@ -1,9 +1,4 @@
 Changes
-MANIFEST
-META.yml
-Makefile.PL
-README
-SIGNATURE
 inc/Module/Install.pm
 inc/Module/Install/Base.pm
 inc/Module/Install/Can.pm
@@ -15,5 +10,10 @@ inc/Module/Install/Win32.pm
 inc/Test/Builder.pm
 inc/Test/More.pm
 lib/CPAN/DistnameInfo.pm
+Makefile.PL
+MANIFEST
+META.yml
+README
+SIGNATURE
 t/ext.t
 t/path.t

@@ -1,3 +1,12 @@
+0.05  --  Wed Jul 14 20:26:26 BST 2004
+
+  * Added pathname attribute and method to return path passed to constructor
+
+2003-12-02 Graham Barr <gbarr@pobox.com>
+
+  * Release 0.04
+  * Added the archive extension, Thanks Thomas Klausner
+
 2003-10-23 Graham Barr <gbarr@pobox.com>
 
   * Release 0.03
