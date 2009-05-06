@@ -1,7 +1,7 @@
 
 package CPAN::DistnameInfo;
 
-$VERSION = "0.07";
+$VERSION = "0.08";
 use strict;
 
 sub distname_info {
@@ -16,6 +16,10 @@ sub distname_info {
      )(?<![._-][vV])
     )+)(.*)
   $/xs or return ($file,undef,undef);
+
+  if ($dist =~ /-undef\z/ and ! length $version) {
+    $dist =~ s/-undef\z//;
+  }
 
   if ($version =~ /^(-[Vv].*)-(\d.*)/) {
    
