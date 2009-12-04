@@ -1,7 +1,7 @@
 
 package CPAN::DistnameInfo;
 
-$VERSION = "0.08";
+$VERSION = "0.09";
 use strict;
 
 sub distname_info {
@@ -28,6 +28,10 @@ sub distname_info {
     $dist .= $1;
     $version = $2;
   }
+
+  # Normalize the Dist.pm-1.23 convention which CGI.pm and
+  # a few others use.
+  $dist =~ s{\.pm$}{};
 
   $version = $1
     if !length $version and $dist =~ s/-(\d+\w)$//;
