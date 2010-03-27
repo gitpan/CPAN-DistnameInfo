@@ -1,6 +1,6 @@
 --- #YAML:1.0
 name:               CPAN-DistnameInfo
-version:            0.09
+version:            0.10
 abstract:           Extract distribution name and version from a distribution filename
 author:
     - Graham Barr <gbarr@cpan.org>
